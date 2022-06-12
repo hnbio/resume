@@ -3,7 +3,10 @@
   <div class="flex items-center pr-5">
 
     <div class="w-64 text-center">
-      <h2 class="text-center text-xl font-bold mb-5">韩彪</h2>
+      <div class="w-20 h-20 mb-3 rounded-full mx-auto overflow-hidden">
+        <img src="../assets/avater.jpeg" alt="">
+      </div>
+      <h2 class="text-center text-xl font-bold mb-2">韩彪</h2>
       <div>
         18112891269
       </div>
@@ -51,11 +54,13 @@
       <span class="text-sm text-gray-600 mr-5">{{project.source}}</span>
       <span class="text-xs text-gray-600">{{project.time}}</span>
       <p class="my-2 text-sm text-gray-600">简介: {{project.synopsis}}</p>
-      <p class="my-2 text-sm text-gray-600 leading-5">工作内容: {{project.content}}</p>
+      <p class="my-2 text-sm text-gray-600 leading-7">工作内容: {{project.content}}</p>
       <p class="my-2 text-sm text-gray-600">技术：{{project.technology}}</p>
     </div>
 
-    <div class="h-0 print:h-28"></div>
+    <div class="h-0 print:h-12"></div>
+
+
     <h4 class="font-bold text-base border-b-2 border-gray-200 sr-only print:not-sr-only">项目经验</h4>
     <div class="my-4 border-b pb-4" *ngFor="let project of resume.projects1">
       <h5 class="font-bold text-gray-700 text-base mb-2 flex items-center cursor-pointer">
@@ -68,7 +73,7 @@
       <span class="text-sm text-gray-600 mr-5">{{project.source}}</span>
       <span class="text-xs text-gray-600">{{project.time}}</span>
       <p class="my-2 text-sm text-gray-600">简介: {{project.synopsis}}</p>
-      <p class="my-2 text-sm text-gray-600 leading-5">工作内容: {{project.content}}</p>
+      <p class="my-2 text-sm text-gray-600 leading-7">工作内容: {{project.content}}</p>
       <p class="my-2 text-sm text-gray-600">技术：{{project.technology}}</p>
     </div>
 
